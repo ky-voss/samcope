@@ -1,5 +1,6 @@
 ul {
   list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 50px;
   overflow: hidden;
@@ -9,6 +10,7 @@ ul {
 
 ul li {
   float: left;
+  text-align: center;
 }
 
 ul li a {
@@ -21,6 +23,7 @@ ul li a {
 
 ul li a:hover {
   background-color: #111111;
+  text-color: white;
 }
 
 .discography {
@@ -39,14 +42,14 @@ ul li a:hover {
   position: relative;
   display: block;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0px;
   text-decoration: none;
 }
 
 .album-card img {
   width: 100%;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.1s ease;
 }
 
 .album-info {
@@ -57,7 +60,7 @@ ul li a:hover {
   background: linear-gradient(transparent, rgba(0,0,0,0.8));
   color: white;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 }
 
 .album-info h3 {
@@ -72,7 +75,7 @@ ul li a:hover {
 }
 
 .album-card:hover img {
-  transform: scale(1.08);
+  transform: scale(-0.80);
 }
 
 .album-card:hover .album-info {
