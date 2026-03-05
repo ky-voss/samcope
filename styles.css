@@ -24,35 +24,57 @@ ul li a:hover {
 }
 
 .discography {
+  padding: 60px 40px;
   text-align: center;
-  padding: 40px;
 }
 
-.card-grid {
+.album-grid {
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  margin-top: 30px;
 }
 
-.card {
-  background: #111;
-  padding: 15px;
+.album-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
   border-radius: 10px;
-  transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
-.card img {
+.album-card img {
   width: 100%;
-  border-radius: 6px;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.album-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-figcaption {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #ddd;
+.album-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.album-info p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.album-card:hover img {
+  transform: scale(1.08);
+}
+
+.album-card:hover .album-info {
+  opacity: 1;
 }
