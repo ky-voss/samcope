@@ -21,3 +21,11 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+.discography {
+  float: center;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
