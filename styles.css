@@ -4,6 +4,7 @@ ul {
   padding: 50px;
   overflow: hidden;
   background-color: white;
+  text-color: #514a4c;
 }
 
 ul li {
@@ -23,9 +24,35 @@ ul li a:hover {
 }
 
 .discography {
-  float: left;
-  display: inline-block;
-  padding: 14px 16px;
-  text-decoration: none;
+  text-align: center;
+  padding: 40px;
 }
-  
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
+}
