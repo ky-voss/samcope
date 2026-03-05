@@ -3,11 +3,11 @@ ul {
   margin: 0;
   padding: 50px;
   overflow: hidden;
-  background-color: #333333;
+  background-color: white;
 }
 
 ul li {
-  float: center;
+  float: left;
 }
 
 ul li a {
@@ -23,7 +23,7 @@ ul li a:hover {
 }
 
 .discography {
-  float: center;
+  float: left;
   display: block;
   padding: 14px 16px;
   text-decoration: none;
