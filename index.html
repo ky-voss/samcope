@@ -184,21 +184,22 @@
   <p>Sam Cope is a songwriter, producer and mixing engineer based in Brooklyn, New York.</p>
 </div>
 
-<div class="contact"id="contact">
-    <form id="contact">
-      <label id="name-label">Name</label>
+<div class="container">
+  <form action="action_page.php">
 
-      <input required id="name"type="text"placeholder="Your Name">
-      <label id="email-label">Email</label>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="youremail@email.com">
 
-      <input required id="email"type="email"placeholder="email@example.com">
-      <label id="message-label">Message</label>
-      <input required id="message"type="text"placeholder="type your message here">
-      
-      <input id="submit"type="submit">
-      <label id="submit"></label>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write a subject here" style="height:200px"></textarea>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write a message here" style="height:400px"></textarea>
 
-    </form>
+    <input type="submit" value="Submit">
+
+  </form>
 </div>
   
 </body>
