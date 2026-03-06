@@ -14,6 +14,7 @@ body{
     display:flex;
     flex-direction:column;
     align-items:center;
+    text-color: white;
 }
 
 /* Navigation */
@@ -31,7 +32,7 @@ body{
 
 .navigation a{
     text-decoration:none;
-    color:white;
+    text-color:white;
     font-weight:500;
     hover: pink;
 }
@@ -68,7 +69,7 @@ body{
 
 .discography-title {
   text-align: center;
-  margin-bottom: 1px;
+  text-color: white;
 }
 
 .album-grid {
