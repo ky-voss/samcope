@@ -3,7 +3,7 @@ body{
     font-family: Arial, sans-serif;
     text-align:center;
     background-image: url("https://previews.dl.dropboxusercontent.com/p/thumb/AC4lBZxLD7xDuWbeuu1vSYr-Udr2ZLGr5-vMfoDMwUxZ9fLKAouVqy7oyzvJN0lgEo5uhrhpQmyXIftyCWjHtA2tHppjZLrlaozd-zd9bevjqR0wj6JyF7unTExxstiO13jjvmANaPONxnoJHno3hXcNhrXirumkv0LTiMmCoulcDURyTqvNMYs2CJ5M89tnqMBcKNwoYfw-bsefaVldForz0no73S_GL13NU5mKtl3NB0GWYgyKdnOtohNwBn19tApqWzX_kBkMIGnc8XTPg91F3dAPtmc07AZgWl69pZ6CBg/p.png");
-    background-size: cover;
+    background-size: tile;
     background-position: center;
     background-repeat: repeat;
 }
