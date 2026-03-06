@@ -2,6 +2,8 @@ body{
     margin:0;
     font-family: Arial, sans-serif;
     text-align:center;
+    background-image: url("sam.png");
+    background-repeat: repeat;
 }
 
 /* Main wrapper */
@@ -102,6 +104,8 @@ body{
   font-size: 14px;
   opacity: 0.85;
 }
+
+
 
 .role {
   font-size: 12px;
