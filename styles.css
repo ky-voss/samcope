@@ -84,7 +84,6 @@ ul li a:hover {
   opacity: 1;
 }
 
-.about {
-  text-align:center;
-  img-align:center;
+.about p img {
+  align:center;
 }
