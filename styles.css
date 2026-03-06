@@ -107,3 +107,22 @@ body{
   font-size: 12px;
   opacity: 1;
 }
+
+function downloadFile() {
+  var Dropbox = require('dropbox').Dropbox;
+  var ACCESS_TOKEN = "XXXXXXXXXXX"; // Here the access token key
+  var dbx = new Dropbox({ accessToken: ACCESS_TOKEN });
+
+  dbx.filesDownload({ path: '/desiredImg.jpg' })
+    .then(function(response) {
+      var results = document.getElementById('results');
+      var img = document.createElement('img');
+      img.src=window.URL.createObjectURL(response.result.fileBlob);
+      console.log(response);
+      console.log(response.fileBlob);
+    })
+    .catch(function(error) {
+      console.error(error);
+    });
+  return false;
+}
