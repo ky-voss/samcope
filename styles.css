@@ -1,89 +1,59 @@
-ul {
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 50px;
-  overflow: hidden;
-  background-color: white;
-  text-color: #514a4c;
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
 }
 
-ul li {
-  float: left;
-  left-margin: 300px;
-  text-align: center;
+/* Main wrapper */
+.main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
-ul li a {
-  display: block;
-  color: #514a4c;
-  text-color: #ffffff;
-  text-align: center;
-  padding: 14px 14px;
-  text-decoration: none;
+/* Navigation */
+
+.navigation ul{
+    list-style:none;
+    padding:0;
+    margin:20px 0;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
 }
 
-ul li a:hover {
-  background-color: #111111;
-  text-color: #ffffff;
+.navigation a{
+    text-decoration:none;
+    color:black;
+    font-weight:500;
 }
 
-.discography {
-  padding: 40px 40px;
-  text-align: center;
+/* Images */
+
+.hero-image{
+    width:70%;
+    max-width:700px;
 }
 
-.album-grid {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+/* Sections */
+
+.discography,
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto;
 }
 
-.album-card {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border-radius: 0px;
-  text-decoration: none;
+/* Album grid */
+
+.album-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+    margin-top:20px;
 }
 
-.album-card img {
-  width: 100%;
-  display: block;
-  transition: transform 0.1s ease;
-}
-
-.album-info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.8));
-  color: white;
-  opacity: 0;
-  transition: opacity 0.1s ease;
-}
-
-.album-info h3 {
-  margin: 0;
-  font-size: 16px;
-}
-
-.album-info p {
-  margin: 3px 0 0;
-  font-size: 13px;
-  opacity: 0.8;
-}
-
-.album-card:hover img {
-  transform: scale(1.05);
-}
-
-.album-card:hover .album-info {
-  opacity: 1;
-}
-
-.about p img {
-  align:center;
+.album-card img{
+    width:100%;
 }
