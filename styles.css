@@ -1,4 +1,4 @@
-body{
+body {
     margin:0;
     font-family: Arial, sans-serif;
     text-align:center;
@@ -7,6 +7,7 @@ body{
     background-image: url("https://dl.dropboxusercontent.com/scl/fi/xyze9nq0kwk25ubseno9j/Sam-Cope-Background.png?rlkey=j3m1teh0vzj3a8vlv20xh5b7p&e=1")
     background-size: 100%
     background-repeat: none;
+    background-position: center;
 }
 
 a:link {
