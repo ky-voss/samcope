@@ -49,9 +49,8 @@ a:visited {
     gap:30px;
 }
 
-.navigation a{
-    text-decoration:none;
-    text-color:white;
+.navigation a:hover{
+    text-decoration:underline;
     font-weight:500;
     hover: pink;
 }
@@ -146,6 +145,6 @@ a:visited {
 }
 
 iframe {
-  max-width: 100%;
-  height: auto;
+  max-width: 75vw;
+  height: 100%;
 }
