@@ -10,6 +10,12 @@ body {
     background-position: center;
 }
 
+iframe {
+  max-width: 75vw;
+  height: auto;
+}
+
+
 a:link {
     color: black
 }
@@ -49,7 +55,7 @@ a:visited {
     gap:30px;
 }
 
-.navigation a:hover{
+.navigation:hover{
     text-decoration:underline;
     font-weight:500;
     hover: pink;
@@ -92,7 +98,7 @@ a:visited {
 
 .album-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: 2(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
 
@@ -144,7 +150,3 @@ a:visited {
   opacity: 1;
 }
 
-iframe {
-  max-width: 75vw;
-  height: 100%;
-}
