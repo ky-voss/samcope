@@ -194,6 +194,33 @@ a:visited {
   text-align: center;
 }
 
+.discography-title img{
+  display:inline-block;
+  max-height:48px;
+  width:auto;
+}
+
+.about-title img{
+  display:inline-block;
+  max-height:48px;
+  width:auto;
+  margin-bottom:8px;
+}
+
+.videos-title img{
+  display:inline-block;
+  max-height:48px;
+  width:auto;
+  margin-bottom:12px;
+}
+
+.blog-title img{
+  display:inline-block;
+  max-height:48px;
+  width:auto;
+  margin-bottom:12px;
+}
+
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
