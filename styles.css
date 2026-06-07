@@ -7,6 +7,18 @@ body {
     background-size: 100%;
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+
+.brand img {
+    width: min(49.5vw, 620px);
+    justify-content: center;
+}
+
 
 
 a:link {
