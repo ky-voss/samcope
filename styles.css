@@ -150,3 +150,11 @@ a:visited {
   opacity: 1;
 }
 
+.blog {
+    position: absolute;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+}
+    
