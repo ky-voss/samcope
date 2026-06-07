@@ -1,19 +1,19 @@
-.site-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 20px;
-  background: #fff;
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    color: black;
+    background: white;
+    background-size: 100%;
 }
 
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  text-align:center;
-  color: black;
-  background: white;
-  background-size: 100%;
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    background: #fff;
 }
 
 .brand {
@@ -24,12 +24,28 @@ body {
 }
 
 .brand img {
-  width: min(49.5vw, 620px);
-  justify-content: center;
+    width: min(49.5vw, 620px);
+    justify-content: center;
 }
 
 
-.site-header {}
+a:link {
+    color: black
+}
+
+h1 {
+    color: black;
+}
+
+a:hover * {
+    text-decoration: underline;
+    color: pink;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
 
 /* Main wrapper */
 .main{
@@ -118,10 +134,8 @@ body {
 /* Images */
 
 .hero-image{
-  width:70%;
-  max-width:700px;
-  display:block;
-  margin:0 auto;
+    width:70%;
+    max-width:700px;
 }
 
 /* Sections */
