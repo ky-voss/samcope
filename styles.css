@@ -1,10 +1,19 @@
-body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    text-align:center;
-    color: black;
-    background: white;
-    background-size: 100%;
+.body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  text-align:center;
+  color: black;
+  background: white;
+  background-size: 100%;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  background: #fff;
 }
 
 .brand {
@@ -15,10 +24,9 @@ body {
 }
 
 .brand img {
-    width: min(49.5vw, 620px);
-    justify-content: center;
+  width: min(49.5vw, 620px);
+  justify-content: center;
 }
-
 
 
 a:link {
@@ -50,15 +58,71 @@ a:visited {
 
 /* Navigation */
 
-.navigation ul{
-    list-style:none;
-    padding:0;
-    margin:20px 0;
-    color: black;
+.navigation{
+  overflow-x:hidden;
+}
 
-    display:flex;
-    justify-content:center;
-    gap:30px;
+
+.navigation ul{
+  list-style:none;
+  padding:0 20px;
+  margin:20px 0;
+  color: black;
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  background: #fff;
+  width: 100%;
+  max-width: 620px;
+  box-sizing: border-box;
+}
+
+.navigation ul li{
+  list-style:none;
+  margin:0;
+  padding:0;
+  flex: 0 0 calc(50% - 12px);
+  max-width: calc(50% - 12px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing: border-box;
+}
+
+.navigation ul li img{
+  display:block;
+  max-height:64px;
+  width:auto;
+  object-fit:contain;
+}
+
+@media (min-width: 620px){
+  .navigation ul{
+    flex-wrap:nowrap;
+  }
+  .navigation ul li{
+    flex: 0 0 calc(25% - 22.5px);
+    max-width: calc(25% - 22.5px);
+  }
+  .navigation ul li img{
+    max-height:72px;
+  }
+}
+
+@media (max-width:480px){
+  .navigation ul{
+    gap:12px;
+    padding:0 8px;
+  }
+  .navigation ul li{
+    flex: 0 0 calc(50% - 6px);
+    max-width: calc(50% - 6px);
+  }
+  .navigation ul li img{
+    max-height:48px;
+  }
 }
 
 .navigation:hover{
