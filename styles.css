@@ -285,6 +285,17 @@ a:visited {
   width: auto;
 }
 
+/* Keep discography header icon consistent with nav icons */
+.discography-title img {
+  max-height: 40px;
+}
+
+@media (min-width: 620px) {
+  .discography-title img {
+    max-height: 48px;
+  }
+}
+
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
