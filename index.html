@@ -16,7 +16,8 @@
   <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
   <link rel="preconnect" href="https://js.supascribe.com" crossorigin>
   <link rel="preload" as="image" href="https://dl.dropboxusercontent.com/scl/fi/rfnzqw4d7tgudcnkxv2f7/AAA025.jpg?rlkey=3jc8i1x0y9caspn1jmdiwdqwa&e=1">
-  <link rel="preload" as="image" href="https://dl.dropboxusercontent.com/scl/fi/nacc1andegawmtpwkmz3c/Sam-Cope.png?rlkey=xz3dfouyit4vgjnzpid30xml0">
+  <link rel="preload" as="image" href="assets/AAA025.webp">
+  <link rel="preload" as="image" href="assets/Sam-Cope.webp">
 
 
   <meta property="og:site_name" content="Sam Cope">
@@ -32,19 +33,18 @@
 
 <header class="site-header">
     <div class="brand">
-      <img 
-        src="https://dl.dropboxusercontent.com/scl/fi/nacc1andegawmtpwkmz3c/Sam-Cope.png?rlkey=xz3dfouyit4vgjnzpid30xml0"
-        alt="Sam Cope Logo"
-        loading="eager"
-      >
+      <picture>
+        <source srcset="assets/Sam-Cope.webp" type="image/webp">
+        <img src="assets/Sam-Cope.png" alt="Sam Cope Logo" loading="eager" decoding="async">
+      </picture>
     </div>
 
     <div class="navigation">
       <ul style="text-align:center;">
-        <li><a href="#discography" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/e64r6i2wavk392mspc6ta/Discography.png?rlkey=smlb9l23d2939bf6jxnrmxksk" alt="Discography"></a></li>
-        <li><a href="#blog" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/a9mb8ukh26zofcofmc9am/Blog.png?rlkey=cbmsqtlhbhc2hga14tk89gqx0" alt="Blog"></a></li>
-        <li><a href="#contact" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/4yn9nwzu3wlfh3ip3hb0s/Contact.png?rlkey=imqwzjincnp0txxw4u3hs28e6" alt="Contact"></a></li>
-        <li><a href="#videos" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/3zv8rahb53zf7lsqcpldv/Videos.png?rlkey=gds7hhfde84kt1ntnwxqavck9" alt="Videos"></a></li>
+        <li><a href="#discography" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/e64r6i2wavk392mspc6ta/Discography.png?rlkey=smlb9l23d2939bf6jxnrmxksk" alt="Discography" loading="lazy" decoding="async"></a></li>
+        <li><a href="#blog" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/a9mb8ukh26zofcofmc9am/Blog.png?rlkey=cbmsqtlhbhc2hga14tk89gqx0" alt="Blog" loading="lazy" decoding="async"></a></li>
+        <li><a href="#contact" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/4yn9nwzu3wlfh3ip3hb0s/Contact.png?rlkey=imqwzjincnp0txxw4u3hs28e6" alt="Contact" loading="lazy" decoding="async"></a></li>
+        <li><a href="#videos" style="--hover-image: url('https://dl.dropboxusercontent.com/scl/fi/d79zzvm5u20v1a886djk6/circle.png?rlkey=ggwt1hwf4qtbktz7ke3n4c74c')"><img src="https://dl.dropboxusercontent.com/scl/fi/3zv8rahb53zf7lsqcpldv/Videos.png?rlkey=gds7hhfde84kt1ntnwxqavck9" alt="Videos" loading="lazy" decoding="async"></a></li>
       </ul>
     </div>
 
@@ -60,7 +60,7 @@
       loop
       playsinline
       preload="metadata"
-      poster="assets/dog-poster.jpg"
+      poster="data:image/svg+xml;utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='658'%20height='450'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23ffffff'/%3E%3C/svg%3E"
       aria-hidden="true"
     >
       <source src="assets/dog-cropped.webm" type="video/webm">
@@ -243,6 +243,8 @@
     src="https://dl.dropboxusercontent.com/scl/fi/g9b7ie0xvbp2dstr47uhi/Sam-Bio-Pic.png?rlkey=x7utrguzx6la8qb9xpdenc58o"
     alt="Sam Cope"
     width="70%"
+    loading="lazy"
+    decoding="async"
     >
 </div>
 
